@@ -36,7 +36,7 @@ body {
 		animation-timing-function: ease-in-out;
 		animation-duration: 0.5s;
 	}
-	@media (max-width: 374px) {
+	@media (max-width: 399px) {
 		.sale-container_link {
 			left: 0;
 			margin: -80px 0 0 0;
@@ -60,7 +60,7 @@ body {
 		-webkit-box-shadow: 0 0 15px 0 rgba(255,255,255,0.75);
 		box-shadow: 0 0 20px 0 rgba(255,255,255,0.75);
 	}
-	@media (max-width: 374px) {
+	@media (max-width: 399px) {
 		.sale-container_image {
 			width: 100%;
 			box-sizing: border-box;
@@ -79,7 +79,7 @@ body {
 		height: 0;
 		clear: both;
 	}
-	@media (max-width: 374px) {
+	@media (max-width: 399px) {
 		.sale-container_text {
 			top: 30px;
 			text-align: center;
@@ -96,7 +96,7 @@ body {
 		padding-right: 41px;
 		text-align: center;
 	}
-	@media (max-width: 374px) {
+	@media (max-width: 399px) {
 		.sale-container_header {
 			font-size: 26px;
 			padding-right: 0;
@@ -111,7 +111,7 @@ body {
 		padding-right: 41px;
 		text-align: center;
 	}
-	@media (max-width: 374px) {
+	@media (max-width: 399px) {
 		.sale-container_subheader {
 			font-size: 13px;
 			padding-right: 0;
@@ -125,7 +125,7 @@ body {
 		width: 41px;
 		height: 44px;
 	}
-	@media (max-width: 374px) {
+	@media (max-width: 399px) {
 		.sale-container_icon {
 			display: block;
 			position: relative;
