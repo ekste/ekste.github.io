@@ -93,23 +93,26 @@ body {
 		font-weight: 300;
 		letter-spacing: -0.0075em;
 		margin: 0 0 5px;
+		padding-right: 41px;
 	}
 	@media (max-width: 374px) {
 		.sale-container_header {
 			font-size: 26px;
+			padding-right: 0;
 		}
 	}
 	.sale-container_subheader {
 		display: block;
 		font-size: 14.5px;
 		line-height: 1em;
-		line-height: 1em;
 		font-weight: 300;
 		letter-spacing: -0.0075em;
+		padding-right: 41px;
 	}
 	@media (max-width: 374px) {
 		.sale-container_subheader {
 			font-size: 13px;
+			padding-right: 0;
 		}
 	}
 	.sale-container_icon {
