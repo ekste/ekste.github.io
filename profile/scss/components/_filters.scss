@@ -1,0 +1,26 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
+
+    &__filter {
+        padding: 10px;
+        margin: 0 0 10px 0;
+        background: rgba(255,255,255,0.1);
+        color: #FFF;
+
+        @media (min-width: 800px) {
+            margin: 0 10px 10px 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        option {
+            background: #000;
+        }
+    }
+}

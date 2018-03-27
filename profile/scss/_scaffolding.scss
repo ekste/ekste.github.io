@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 40px 0 0 40px;
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+
+    &:before {
+        display: block;
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: #48494B;
+    }
+
+    &:after {
+        position: fixed;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 40px;
+        background: #3575CF;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100%;
+
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 80px 1fr;
+        }
+}

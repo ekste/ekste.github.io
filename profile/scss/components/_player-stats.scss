@@ -1,0 +1,96 @@
+.player-stats {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+
+    &__tabs {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 1;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background: rgba(0,0,0,0.75);
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+
+    &__tab {
+        color: #FFF;
+        margin: 0;
+        padding: 15px;
+        list-style: none;
+        background: transparent;
+        transition: background 0.2s ease-in-out;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        color: rgba(255,255,255,0.5);
+
+        &:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        &--active {
+            border-bottom: 2px solid rgba(255,255,255,0.75);
+            color: rgba(255,255,255,1);
+            font-weight: 600;
+        }
+    }
+
+    &__content {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 2;
+        background: rgba(0,0,0,0.5);
+        color: #FFF;
+        display: none;
+        padding: 10px;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__tiles {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 10px;
+        border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    &__tile {
+        width: 50%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        background: rgba(0,0,0,0.25);
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 10px;
+
+        @media (min-width: 800px) {
+            width: 33.33%;
+        }
+    }
+
+    &__tile-title {
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    &__tile-data {
+        text-transform: uppercase;
+        font-size: 0.75em;
+    }
+}
