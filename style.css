@@ -1,0 +1,116 @@
+:root {
+    --textColour: #333;
+    --textColour--inverted: #FFF;
+    --lightBackground: #F1F1F1;
+    --midBackground: #A6418B;
+    --midBackgroundAccent: #C04BF2;
+    --baseFontSize: 1.1rem;
+    --spacing: calc(var(--baseFontSize) * 2);
+    --spacing--quarter: calc(var(--spacing) / 4);
+    --spacing--half: calc(var(--spacing) / 2);
+    --spacing--double: calc(var(--spacing) * 2);
+    --titleWeight: 600;
+    --subtitleWeight: 500;
+    --borderRadius: .25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --textColour: #F1F1F1;
+        --lightBackground: #333;
+    }
+}
+
+html,
+body {
+    font-size: var(--baseFontSize);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background: var(--lightBackground);
+    color: var(--textColour);
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: var(--lightBackground);
+    padding: var(--spacing);
+}
+
+.header__title {
+    font-size: calc(var(--baseFontSize) * 2);
+    margin-inline: 0;
+    margin-block: 0 var(--spacing--quarter);
+    font-weight: var(--titleWeight);
+}
+
+.header__subtitle {
+    margin: 0;
+    font-weight: var(--subtitleWeight);
+}
+
+.main {
+    padding: var(--spacing);
+    background: var(--midBackground);
+    color: var(--textColour--inverted);
+}
+
+.main__text {
+    margin-inline: 0;
+    margin-block: 0 var(--spacing--half);
+    line-height: 1.5;
+    max-inline-size: 60ch;
+}
+
+.main__text:first-of-type {
+    font-size: calc(var(--baseFontSize) * 1.25);
+    font-weight: var(--subtitleWeight);
+}
+
+.main__text:last-child {
+    margin: 0;
+}
+
+.contact {
+    padding: var(--spacing);
+}
+
+.contact__title {
+    font-size: calc(var(--baseFontSize) * 1.25);
+    margin-inline: 0;
+    margin-block: 0 var(--spacing--quarter);
+}
+
+.contact__subtitle {
+    margin-inline: 0;
+    margin-block: 0 var(--spacing--half);
+}
+
+.contact__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: var(--spacing--quarter);
+}
+
+.contact__listItem {
+    list-style: none;
+}
+
+.contact__link {
+    display: block;
+    text-decoration: none;
+    color: var(--textColour);
+    border: 2px solid var(--midBackground);
+    padding-block: var(--spacing--quarter);
+    padding-inline: var(--spacing--half);
+    border-radius: var(--borderRadius);
+}
+
+.contact__link:hover {
+    border: 2px solid var(--midBackgroundAccent);
+}
